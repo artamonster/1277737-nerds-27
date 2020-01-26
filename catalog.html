@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Магазин готовых шаблонов</title>
+</head>
+<body>
+  <header>
+    <!-- Как я понял,меню одинаковое на обеих страницах,только тут ещё явный заголовок h1 -->
+
+    <nav>
+      <a class="logo" href="index.html">
+      <img class="nav-logo"src="img/nav-logo.svg" width="#" height="#" alt="Logo-nerds-small">
+      </a>
+
+      <ul class="nav">
+        <li class="nav-item"><a class="nav-link" href="#">Студия</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Клиенты</a></li>
+        <li class="nav-item"><a class="nav-link" href="catalog.html">Магазин</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
+      </ul>
+
+      <div class="nav-user">
+        <a class="nav-user-cart-link" href="#">Корзина</a>
+      </div>
+    </nav>
+
+    <h1>Магазин готовых шаблонов</h1>
+
+  </header>
+  <main>
+    <!-- Здесь должна быть форма,Я ещё не закончил интерактив по ним,да и в задании пишут,что пока рано-так что пока использовал form "для вида",сделал как смог((   -->
+    <form class="filters" action="#">
+
+        <h2 class="filters-net-title">Сетка:</h2>
+
+        <ul class="filters-net">
+          <li class="filters-input-net">
+           Адаптивная
+          </li>
+          <li class="filters-input-net">
+            Фиксированная
+           </li>
+
+           <li class="filters-input-net">
+            Резиновая
+           </li>
+        </ul>
+
+        <h2 class="filters-features-title">Особенности:</h2>
+
+        <ul class="filters-features">
+          <li class="filters-input-features">
+            Слайдер
+          </li>
+          <li class="filters-input-features">
+            Блок
+            преимуществ
+           </li>
+
+           <li class="filters-input-features">
+            Новости
+           </li>
+
+           <li class="filters-input-features">
+            Галерея
+           </li>
+
+           <li class="filters-input-features">
+            Корзина
+           </li>
+        </ul>
+
+      <button class="button-gray" type="submit">Показать</button>
+    </form>
+<!-- не понятно,откуда брать текст для карточек товара,кое что нашёл,а остальное поставил как смог,цену на кнопке везде одинаковую поставил))) -->
+    <ul class="catalog-list">
+      <li class="catalog-list-item-card">
+        <img class="card-product-image" src="img/sedona.jpg" alt="Sedona" width="#" height="#">
+        <div class="card-description">
+          <h3 class="card-title">
+            <a class="card-link" href="#">Sedona</a>
+          </h3>
+          <p class="card-text">Информационный сайт для туристов</p>
+          <a class="card-button-red" href="#">9 900 руб.</a>
+        </div>
+      </li>
+      <li class="catalog-list-item-card">
+        <img class="card-image" src="img/img-pink.jpg" alt="Pink App" width="#" height="#">
+        <div class="card-description">
+          <h3 class="card-title">
+            <a class="card-link" href="#">Pink App</a>
+          </h3>
+          <p class="card-text">Продуктовый лендинг приложения для iOS и Android</p>
+          <a class="card-button-red" href="#">9 900 руб.</a>
+        </div>
+      </li>
+      <li class="catalog-list-item-card">
+        <img class="card-image" src="img/img-barbershop.jpg" alt="Barbershop" width="#" height="#">
+        <div class="card-description">
+          <h3 class="card-title">
+            <a class="card-link" href="#">Barbershop</a>
+          </h3>
+          <p class="card-text">Барбершоп</p>
+          <a class="card-button-red" href="#">9 900 руб.</a>
+        </div>
+      </li>
+      <li class="catalog-list-item-card">
+        <img class="card-image" src="img/img-mishka.jpg" alt="Mishka" width="#" height="#">
+        <div class="card-description">
+          <h3 class="card-title">
+            <a class="card-link" href="#">Mishka</a>
+          </h3>
+          <p class="card-text">Интернет-магазин вязаных изделий</p>
+          <a class="card-button-red" href="#">9 900 руб.</a>
+        </div>
+      </li>
+      <li class="catalog-list-item-card">
+        <img class="card-image" src="img/img-aplus.jpg" alt="A+" width="#" height="#">
+        <div class="card-description">
+          <h3 class="card-title">
+            <a class="card-link" href="#">A+</a>
+          </h3>
+          <p class="card-text"> Курсы </p>
+          <a class="card-button-red" href="#">9 900 руб.</a>
+        </div>
+      </li>
+      <li class="catalog-list-item-card">
+        <img class="card-image" src="img/img-kvast.jpg" alt="Кваст" width="#" height="#">
+        <div class="card-description">
+          <h3 class="card-title">
+            <a class="card-link" href="#">Кваст</a>
+          </h3>
+          <p class="card-text">Cайт крафтового кваса</p>
+          <a class="card-button-red" href="#">9 900 руб.</a>
+        </div>
+      </li>
+    </ul>
+
+    <footer>
+      <!-- футер вроде тоже одинаковый -->
+      <div class="footer-social">
+        <a href="#" class="footer-social-item">
+          <img src="img/vk.png" alt="Vkontakte">
+        </a>
+        <a href="#" class="footer-social-item">
+          <img src="img/fb.png" alt="Facebook">
+        </a>
+        <a href="#" class="footer-social-item">
+          <img src="img/instagram.png" alt="Instagram">
+        </a>
+    </div>
+    <div class="footer-slogan">
+      <p class="footer-slogan-title">Давайте дружить, это выгодно!</p>
+      <p class="footer-slogan-text">Скидка 10% для друзей из социальных сетей.</p>
+    </div>
+    </footer>
+  </main>
+
+</body>
+</html>
