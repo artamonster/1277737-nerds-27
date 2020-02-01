@@ -6,11 +6,12 @@
 </head>
 <body>
   <header>
-    <!-- Как я понял,меню одинаковое на обеих страницах,только тут ещё явный заголовок h1 -->
+
 
     <nav>
       <a class="logo" href="index.html">
-      <img class="nav-logo" src="img/nav-logo.svg"  alt="Logo-nerds-small">
+      <img class="nav-logo" src="img/nav-logo.svg"  alt="Logo-nerds-small" width="160"
+      height="65">
       </a>
 
       <ul class="nav">
@@ -29,7 +30,36 @@
 
   </header>
   <main>
-    <!-- Здесь должна быть форма,Я ещё не закончил интерактив по ним,да и в задании пишут,что пока рано-так что пока использовал form "для вида",сделал как смог((   -->
+    <!-- формы пока только начал делать,думаю завтра закончить
+    <form class="form-filters" action="#" >
+      <fieldset class="form-filters-fieldset-price">
+        <legend class="form-filters-legend">Стоимость:</legend>
+
+        <div class="price-filter-form-filters">
+          <div class="price-filter-range">
+            <div class="price-filter-range-scale">
+              <div class="price-filter-range-bar"></div>
+
+              <button class="price-filter-range-handle-min" type="button"
+                aria-label="Минимально"></button>
+              <button class="price-filter-range-handle-max" type="button"
+                aria-label="Максимально"></button>
+            </div>
+          </div>
+
+          <p class="price-filter-interval">
+            <label class="price-filter-label">От
+              <input class="price-filter-input" type="text" name="min-price" value="0">
+            </label>
+
+            <label class="price-filter-label-max-price">До
+              <input class="price-filter-input" type="text" name="max-price" value="15000">
+            </label>
+          </p>
+        </div>
+
+      </fieldset> -->
+
     <form class="filters" action="#">
 
         <h2 class="filters-net-title">Сетка:</h2>
@@ -73,10 +103,11 @@
 
       <button class="button-gray" type="submit">Показать</button>
     </form>
-<!-- не понятно,откуда брать текст для карточек товара,кое что нашёл,а остальное поставил как смог,цену на кнопке везде одинаковую поставил))) -->
+<section class="catalog">
+
     <ul class="catalog-list">
       <li class="catalog-list-item-card">
-        <img class="card-product-image" src="img/sedona.jpg" alt="Sedona" >
+        <img class="card-product-image" src="img/sedona.jpg" alt="Sedona" width="360" height="576" >
         <div class="card-description">
           <h3 class="card-title">
             <a class="card-link" href="#">Sedona</a>
@@ -86,7 +117,7 @@
         </div>
       </li>
       <li class="catalog-list-item-card">
-        <img class="card-image" src="img/img-pink.jpg" alt="Pink App" >
+        <img class="card-image" src="img/img-pink.jpg" alt="Pink App" width="360" height="576" >
         <div class="card-description">
           <h3 class="card-title">
             <a class="card-link" href="#">Pink App</a>
@@ -96,58 +127,95 @@
         </div>
       </li>
       <li class="catalog-list-item-card">
-        <img class="card-image" src="img/img-barbershop.jpg" alt="Barbershop" >
+        <img class="card-image" src="img/img-barbershop.jpg" alt="Barbershop" width="360" height="576" >
         <div class="card-description">
           <h3 class="card-title">
             <a class="card-link" href="#">Barbershop</a>
           </h3>
-          <p class="card-text">Барбершоп</p>
+          <p class="card-text">Сайт салона красоты. Для мужчин, да.</p>
           <a class="card-button-red" href="#">9 900 руб.</a>
         </div>
       </li>
       <li class="catalog-list-item-card">
-        <img class="card-image" src="img/img-mishka.jpg" alt="Mishka" >
+        <img class="card-image" src="img/img-mishka.jpg" alt="Mishka" width="360" height="576" >
         <div class="card-description">
           <h3 class="card-title">
             <a class="card-link" href="#">Mishka</a>
           </h3>
-          <p class="card-text">Интернет-магазин вязаных изделий</p>
+          <p class="card-text">Интернет-магазин вязаных игрушек</p>
           <a class="card-button-red" href="#">9 900 руб.</a>
         </div>
       </li>
       <li class="catalog-list-item-card">
-        <img class="card-image" src="img/img-aplus.jpg" alt="A+" >
+        <img class="card-image" src="img/img-aplus.jpg" alt="A+" width="360" height="576" >
         <div class="card-description">
           <h3 class="card-title">
-            <a class="card-link" href="#">A+</a>
+            <a class="card-link" href="#">A Plus</a>
           </h3>
-          <p class="card-text"> Курсы </p>
+          <p class="card-text">Лендинг курсов повышения квалификации </p>
           <a class="card-button-red" href="#">9 900 руб.</a>
         </div>
       </li>
       <li class="catalog-list-item-card">
-        <img class="card-image" src="img/img-kvast.jpg" alt="Кваст" >
+        <img class="card-image" src="img/img-kvast.jpg" alt="Кваст" width="360" height="576" >
         <div class="card-description">
           <h3 class="card-title">
             <a class="card-link" href="#">Кваст</a>
           </h3>
-          <p class="card-text">Cайт крафтового кваса</p>
+          <p class="card-text">Промо-сайт производителя крафтового кваса</p>
           <a class="card-button-red" href="#">9 900 руб.</a>
         </div>
       </li>
     </ul>
 
+    <ul class="pages">
+      <li class="pages-item">
+        <a class="button-gray-pages-current">1</a>
+      </li>
+      <li class="pages-item">
+        <a class="button-gray-pages" href="#">2</a>
+      </li>
+      <li class="pages-item">
+        <a class="button-gray-pages" href="#">3</a>
+      </li>
+      <li class="pages-item">
+        <a class="button-gray-pages-next" href="#">Следующая</a>
+      </li>
+    </ul>
+
+</section>
+
     <footer>
-      <!-- футер вроде тоже одинаковый -->
+      <section class="map">
+        <h2 class="visually-hidden">Как к нам добраться</h2>
+
+        <img class="map-image" src="img/bg-map.png" alt="Месторасположение офиса" width="1440" height="416">
+
+        <div class="map-contacts-wrapper">
+          <div class="contacts">
+            <p class="contacts-title">Nёrds design studio</p>
+
+            <p class="contacts-text">191186, Санкт-Петербург,
+              <br>ул. Б. Конюшенная, д. 19/8</p>
+
+            <p class="contacts-text">тел.
+              <a class="contacts-link" href="tel:+78122757575">+7 (812) 275-75-75</a>
+            </p>
+
+            <a class="button-red contacts-button" href="#" >Напишите нам</a>
+          </div>
+        </div>
+      </section>
+
       <div class="footer-social">
         <a href="#" class="footer-social-item">
-          <img src="img/vk.png" alt="Vkontakte">
+          <img src="img/vk.png" alt="Vkontakte" width="79" height="79">
         </a>
         <a href="#" class="footer-social-item">
-          <img src="img/fb.png" alt="Facebook">
+          <img src="img/fb.png" alt="Facebook" width="79" height="79">
         </a>
         <a href="#" class="footer-social-item">
-          <img src="img/instagram.png" alt="Instagram">
+          <img src="img/instagram.png" alt="Instagram" width="79" height="79">
         </a>
     </div>
     <div class="footer-slogan">
