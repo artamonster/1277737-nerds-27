@@ -175,6 +175,8 @@
   </li>
 </ul>
 
+</main>
+
 <footer>
   <section class="map">
     <h2 class="visually-hidden">Как к нам добраться</h2>
@@ -214,7 +216,29 @@
   <p class="footer-slogan-text">Скидка 10% для друзей из социальных сетей.</p>
 </div>
 </footer>
+<!-- непонятно,что ставить в поле action? -->
+<form class="write-us" action="#" method="post">
+  <h2 class="write-us-title">Напишите нам</h2>
+  <div class="write-us-client">
+      <label class="write-us-label" for="write-us-name">Ваше имя:</label>
+      <input class="write-us-text" type="text" name="name" id="write-us-name" placeholder="Имя Фамилия"
+        required>
 
-    </main>
+      <label class="write-us-label" for="write-us-email">Ваш e-mail:</label>
+      <input class="write-us-text" type="email" name="email" id="write-us-email"
+        placeholder="email@example.com" required>
+  </div>
+
+  <div class="write-us-letter">
+    <label class="write-us-letter-label" for="write-us-letter-msg">Текст письма:</label>
+    <textarea class="write-us-letter-textarea" name="message" id="write-us-letter-msg"
+      placeholder="В свободной форме"></textarea>
+  </div>
+
+  <button class="button-red-form" type="submit">Отправить</button>
+
+  <button class="write-us-close" aria-label="Закрыть" type="button"></button>
+</form>
+
   </body>
 </html>

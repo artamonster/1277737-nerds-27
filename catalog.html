@@ -30,7 +30,7 @@
 
   </header>
   <main>
-    <!-- формы пока только начал делать,думаю завтра закончить
+
     <form class="form-filters" action="#" >
       <fieldset class="form-filters-fieldset-price">
         <legend class="form-filters-legend">Стоимость:</legend>
@@ -58,53 +58,77 @@
           </p>
         </div>
 
-      </fieldset> -->
+      </fieldset>
 
-    <form class="filters" action="#">
 
-        <h2 class="filters-net-title">Сетка:</h2>
+      <fieldset class="form-filters-net">
+       <legend class="filters-net-legend">Сетка:</legend>
 
-        <ul class="filters-net">
-          <li class="filters-input-net">
-           Адаптивная
+        <ul class="form-filters-net-cover">
+          <li class="form-filters-input-net">
+            <input class="form-filters-radio " type="radio" id="net-adaptive" name="net"
+            value="adaptive" checked>
+          <label class="form-filters-label-radio" for="net-adaptive">Адаптивная</label>
           </li>
-          <li class="filters-input-net">
-            Фиксированная
-           </li>
 
-           <li class="filters-input-net">
-            Резиновая
-           </li>
+          <li class="form-filters-input-net">
+            <input class="form-filters-radio" type="radio" id="net-fixed" name="net"
+            value="fixed" >
+          <label class="form-filters-label-radio" for="net-fixed">Фиксированная</label>
+          </li>
+
+          <li class="form-filters-input-net">
+            <input class="form-filters-radio" type="radio" id="net-flexible" name="net"
+            value="flexible" >
+          <label class="form-filters-label-radio" for="net-flexible">Резиновая</label>
+          </li>
         </ul>
 
-        <h2 class="filters-features-title">Особенности:</h2>
+      </fieldset>
 
-        <ul class="filters-features">
-          <li class="filters-input-features">
-            Слайдер
+
+      <fieldset class="form-filters-features">
+        <legend class="filters-features-legend">Особенности:</legend>
+
+        <ul class="form-filters-features-cover">
+          <li class="form-filters-input-features">
+            <input class="form-filters-checkbox" type="checkbox" id="features-slider" name="features"
+              value="slider" checked>
+            <label class="form-filters-label-checkbox" for="features-slider">Слайдер</label>
           </li>
-          <li class="filters-input-features">
-            Блок
-            преимуществ
-           </li>
 
-           <li class="filters-input-features">
-            Новости
-           </li>
+          <li class="form-filters-input-features">
+            <input class="form-filters-checkbox" type="checkbox" id="features-block" name="features"
+              value="features">
+            <label class="form-filters-label-checkbox" for="features-block">Блок
+              преимуществ</label>
+          </li>
 
-           <li class="filters-input-features">
-            Галерея
-           </li>
+          <li class="form-filters-input-features">
+            <input class="form-filters-checkbox" type="checkbox" id="features-news" name="features"
+              value="news" checked>
+            <label class="form-filters-label-checkbox" for="features-news">Новости</label>
+          </li>
 
-           <li class="filters-input-features">
-            Корзина
-           </li>
+          <li class="form-filters-input-features">
+            <input class="form-filters-checkbox" type="checkbox" id="features-gallery" name="features"
+              value="gallery">
+            <label class="form-filters-label-checkbox" for="features-gallery">Галерея</label>
+          </li>
+
+          <li class="form-filters-input-features">
+            <input class="form-filters-checkbox" type="checkbox" id="features-basket" name="features"
+              value="basket">
+            <label class="form-filters-label-checkbox" for="features-basket">Корзина</label>
+          </li>
         </ul>
+      </fieldset>
 
       <button class="button-gray" type="submit">Показать</button>
     </form>
-<section class="catalog">
 
+
+<section class="catalog">
     <ul class="catalog-list">
       <li class="catalog-list-item-card">
         <img class="card-product-image" src="img/img-sedona.jpg" alt="Sedona" width="360" height="576" >
@@ -185,6 +209,8 @@
 
 </section>
 
+</main>
+
     <footer>
       <section class="map">
         <h2 class="visually-hidden">Как к нам добраться</h2>
@@ -223,7 +249,29 @@
       <p class="footer-slogan-text">Скидка 10% для друзей из социальных сетей.</p>
     </div>
     </footer>
-  </main>
+
+    <form class="write-us" action="#" method="post">
+      <h2 class="write-us-title">Напишите нам</h2>
+      <div class="write-us-client">
+          <label class="write-us-label" for="write-us-name">Ваше имя:</label>
+          <input class="write-us-text" type="text" name="name" id="write-us-name" placeholder="Имя Фамилия"
+            required>
+
+          <label class="write-us-label" for="write-us-email">Ваш e-mail:</label>
+          <input class="write-us-text" type="email" name="email" id="write-us-email"
+            placeholder="email@example.com" required>
+      </div>
+
+      <div class="write-us-letter">
+        <label class="write-us-letter-label" for="write-us-letter-msg">Текст письма:</label>
+        <textarea class="write-us-letter-textarea" name="message" id="write-us-letter-msg"
+          placeholder="В свободной форме"></textarea>
+      </div>
+
+      <button class="button-red-form" type="submit">Отправить</button>
+
+      <button class="write-us-close" aria-label="Закрыть" type="button"></button>
+    </form>
 
 </body>
 </html>
